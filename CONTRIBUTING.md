@@ -41,7 +41,7 @@ DocumentDB requires every contribution to be signed with a DCO through a known i
 
 Signed-off-by: John Doe <john.doe@email.com>
 
-git commit --signoff can also be used to automatically add the Signed-off-by message to the end of a commit message if git configs have been set to include user.name and user.email.
+git commit --signoff ( or git commit -s) can also be used to automatically add the Signed-off-by message to the end of a commit message if git configs have been set to include user.name and user.email.
 
 Commits of any form require a DCO, including revert commits.
 
