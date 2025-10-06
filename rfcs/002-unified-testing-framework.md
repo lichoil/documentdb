@@ -65,10 +65,10 @@ Contributors may face friction when validating changes across layers, and CI lac
   - Run Postgres regression tests (Layer A)
   - Run Gateway integration tests (Layer B)
   - Run E2E (Layer C) test covering different os/posrgres version, client drivers.
-- Scheduled pipeline:
   - Run compatibility test(Layer D)
-  - Weekly/daily perf baselines (Layer E)
-  - Alert for compatibility drop
+  - Run perf baselines (Layer E)
+
+  - Alert for test regression/compatibility drop
   - Alert on >20% perf degradation compared to last baseline
 
 ## Performance Baselines
@@ -117,5 +117,5 @@ Contributors may face friction when validating changes across layers, and CI lac
 
 - scope of test coveraged in pr trigged action, full test might take longer time.
 - Desired thresholds for perf alerting(20%)?
-- Layer B and Layer C have some overlap, although test goal is different.
+- compatibility can be merged to E2E test(as one test aspect)?
 - setup a separate docker for client/backend for sagregation of resource consumption?
